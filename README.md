@@ -14,7 +14,7 @@ Categorical predictors: AGE, GENDER, RACE, DRIVING_EXPERIENCE, EDUCATION, INCOME
 Numeric predictors: CREDIT_SCORE, VEHICLE_OWNERSHIP, MARRIED, CHILDREN, ANNUAL_MILEAGE, SPEEDING_VIOLATIONS, DUIS, PAST_ACCIDENTS.
 
 ## c. Github Repository Link
-NOT YET PUBLISHED - replace this line with your actual GitHub repository URL after upload.
+https://github.com/tareniprasadpradhan-star/car-insurance-claim-classification
 
 Live Streamlit App Link: NOT YET DEPLOYED - replace with your actual Community Cloud URL after deployment.
 
