@@ -73,45 +73,8 @@ Positive class = 1. Accuracy, precision, recall, F1 and MCC use predicted labels
 - create_submission.py and requirements-report.txt: regenerate the final PDF after inserting live links.
 - .streamlit/config.toml: app theme and upload limit.
 
-## Run locally
-Use Python 3.12. Open a terminal in this project folder.
-```bash
-python -m venv .venv
-```
-Windows PowerShell activation:
-```powershell
-.venv\Scripts\Activate.ps1
-```
-macOS/Linux activation:
-```bash
-source .venv/bin/activate
-```
-Install dependencies and launch the already-trained app:
-```bash
-python -m pip install -r requirements.txt
-python -m streamlit run app.py
-```
-Open the local URL shown in the terminal, normally http://localhost:8501. Use the bundled test data or upload test_data.csv. Choose a model to see its six metrics, confusion matrix and classification report. The comparison table shows all five models on the same CSV. Predictions and metrics can be downloaded.
-
-To reproduce training locally (not inside the app):
-```bash
-python train.py --data data/Car_Insurance_Claim.csv
-```
-Only load the trusted model files supplied with this project. No pickle/model upload is provided in the app.
-
-## Upload and deploy
-Create your own GitHub repository, upload the extracted project contents with the model directory intact, then deploy app.py from branch main on Streamlit Community Cloud. Choose Python 3.12 in advanced settings. Use requirements.txt at the repository root. The separate step-by-step guide covers browser upload, Git commands, local development, deployment and troubleshooting.
-
-## Finalize the required single submission PDF
-After publishing, replace both link lines in this README. Install the report-only dependency, then run:
-```bash
-python -m pip install -r requirements-report.txt
-python create_submission.py --github https://github.com/YOUR_USERNAME/YOUR_REPO --app https://YOUR_APP.streamlit.app
-```
-Replace both example URLs with your actual working URLs. The script updates the README link lines and produces Car_Insurance_Assignment_Submission.pdf, with GitHub link first, Streamlit link second and the complete README content after them. Open and verify both links in an incognito window before submission. The ZIP and guide support your work; the assignment asks for the single finalized PDF.
-
 ## Limitations and academic ownership
-Results describe this random holdout, not a real deployment population. No temporal validation or confidence interval is provided. Race and gender are retained for academic comparison; no fairness assessment or production underwriting approval is implied. Review and understand the source, make your own documented changes, and preserve genuine GitHub commits as you develop. Do not manufacture a history of work. The source target timing is insufficiently documented to prove all predictors precede each claim.
+Results describe this random holdout, not a real deployment population. No temporal validation or confidence interval is provided. Race and gender are retained for academic comparison; no fairness assessment or production underwriting approval is implied.
 
 ## References
 - Kaggle source: https://www.kaggle.com/datasets/sagnik1511/car-insurance-data
