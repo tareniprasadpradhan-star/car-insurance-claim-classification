@@ -1,0 +1,31 @@
+{
+  "dataset_url": "https://www.kaggle.com/datasets/sagnik1511/car-insurance-data",
+  "source_sha256": "f33708d6e65178b2b18576ba678b82976ff766dadb3b94077dc013f464298971",
+  "source_rows": 10000,
+  "source_columns": 19,
+  "predictors": 17,
+  "excluded": [
+    "ID",
+    "OUTCOME"
+  ],
+  "training_rows": 8000,
+  "test_rows": 2000,
+  "training_class_counts": {
+    "0": 5494,
+    "1": 2506
+  },
+  "test_class_counts": {
+    "0": 1373,
+    "1": 627
+  },
+  "random_state": 42,
+  "python": "3.12.14",
+  "scikit_learn": "1.8.0",
+  "models": {
+    "Logistic Regression": "model/logistic_regression.joblib",
+    "Decision Tree": "model/decision_tree.joblib",
+    "KNN": "model/knn.joblib",
+    "Naive Bayes": "model/naive_bayes.joblib",
+    "Support Vector Machine": "model/svm.joblib"
+  }
+}
