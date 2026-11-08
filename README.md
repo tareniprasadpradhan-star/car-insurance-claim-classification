@@ -73,9 +73,6 @@ Positive class = 1. Accuracy, precision, recall, F1 and MCC use predicted labels
 - create_submission.py and requirements-report.txt: regenerate the final PDF after inserting live links.
 - .streamlit/config.toml: app theme and upload limit.
 
-## Limitations and academic ownership
-Results describe this random holdout, not a real deployment population. No temporal validation or confidence interval is provided. Race and gender are retained for academic comparison; no fairness assessment or production underwriting approval is implied.
-
 ## References
 - Kaggle source: https://www.kaggle.com/datasets/sagnik1511/car-insurance-data
 - Streamlit deployment: https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app
