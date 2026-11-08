@@ -16,7 +16,7 @@ Numeric predictors: CREDIT_SCORE, VEHICLE_OWNERSHIP, MARRIED, CHILDREN, ANNUAL_M
 ## c. Github Repository Link
 https://github.com/tareniprasadpradhan-star/car-insurance-claim-classification
 
-Live Streamlit App Link: NOT YET DEPLOYED - replace with your actual Community Cloud URL after deployment.
+https://car-insurance-claim-classification-xibgarsbxkyhtq3rzfnnz3.streamlit.app
 
 ## d. Models used
 All models use a scikit-learn Pipeline that includes the fitted preprocessing. Numeric values are median-imputed and standardized. Categorical values are mode-imputed and one-hot encoded; unknown categories are ignored. POSTAL_CODE is nominal, not a continuous magnitude. Dense output supports Gaussian Naive Bayes. The raw CSV schema is validated before prediction.
